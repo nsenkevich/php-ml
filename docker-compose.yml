@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  php-test:
+    build:
+     context: ./
+     dockerfile: ./php-test.dockerfile
+    environment:
+      APPLICATION_ENVIRONMENT: "test"
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - /app/vendor

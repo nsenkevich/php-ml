@@ -41,6 +41,11 @@ Currently this library is in the process of being developed, but You can install
 ```
 composer require php-ai/php-ml
 ```
+## Tests
+
+```
+docker-compose run --rm -w /app php-test vendor/phpunit/phpunit/phpunit
+```
 
 ## Examples
 
